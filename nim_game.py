@@ -1,65 +1,72 @@
+__author__ = "Marcos A. P. de Lima"
+__copyright__ = "Copyright 2011"
+__credits__ = "Rob Knight"
+__license__ = "GNU Public General License"
+__version__ = "3.0"
+__email__ = "marcos.lima@icomp.ufam.edu.br"
+__status__ = "Published"
+
 def computador_escolhe_jogada(n,m):
   jogada = m
   elif (n % (m+1)):
     jogada = (n % (m+1))
-  print('\nO computador tirou {pieces}.'.format(pieces='uma peça' if jogada == 1 else str(jogada)+' peças'))
+  print('\nComputer has removed {pieces}.'.format(pieces='one piece' if jogada == 1 else str(jogada)+' pieces'))
   return jogada
 
 def usuario_escolhe_jogada(n,m):
   jogada = m+1
   while (jogada > m) and (jogada < 1):
-    jogada = int(input('\nQuantas peças você vai tirar? '))
+    jogada = int(input('\nHow many pieces did you want to remove? '))
     if (jogada > m):
-      print('\nOops! Jogada inválida! Tente de novo.')
-  print('\nVocê tirou {pieces}.'.format(pieces='uma peça' if jogada == 1 else str(jogada)+' peças'))
+      print('\nOops! Invalid quantity! Try again.')
+  print('\nYou has removed {pieces}.'.format(pieces='one piece' if jogada == 1 else str(jogada)+' pieces'))
   return jogada
 
 def partida():
-  n = int(input('Quantas peças? '))
-  m = int(input('Limite de peças por jogada? '))
+  n = int(input('How many pieces in this game? '))
+  m = int(input('Limit of removed pieces per move? '))
   vez = 0
+  
   if (m > n) or (n % (m+1)):
-    print('\nComputador começa!')
+    print('\nComputer starts the game!')
   else:
-    print('\nVocê começa!')
+    print('\nYou start the game!')
     vez = not vez
+    
   while (n > 0):
     if (vez):      
-      jogada = usuario_escolhe_jogada(n,m)
-      n = n - jogada
-      if (n > 0):
-        print('Agora resta apenas {pieces} no tabuleiro.'.format(pieces='uma peça' if n == 1 else str(n)+' peças'))
-        vez = not vez
+      jogada = usuario_escolhe_jogada(n,m)      
     else:
       jogada = computador_escolhe_jogada(n,m)
-      n = n - jogada
-      if (n > 0):
-        print('Agora resta apenas {pieces} no tabuleiro.'.format(pieces='uma peça' if n == 1 else str(n)+' peças'))
-        vez = not vez
+    n = n - jogada  
+    if (n > 0):
+      print('Now {pieces} in game.'.format(pieces='there is only one piece' if n == 1 else 'there are '+str(n)+' pieces'))
+      vez = not vez      
+      
   if (vez):
-    print('Fim do jogo! Você ganhou!\n')
+    print('The Game is Over! You wins!\n')
   else:
-    print('Fim do jogo! O computador ganhou!\n')
+    print('The Game is Over! Computer wins!\n')
   return vez
 
 
 def campeonato():
-  print('\nVocê escolheu um campeonato!\n')
+  print('\nYou choose 3 turn championship!\n')
   pontosCPU = 0
   pontosJogador = 0
   for i in range(1,4):
-    print('**** Rodada {} ****\n'.format(i))
+    print('**** Round {} ****\n'.format(i))
     if(partida()):
       pontosJogador += 1
     else:
       pontosCPU +=1
-  print('**** Final do campeonato! ****\n')
-  print('Placar: Você {} x {} Computador'.format(pontosJogador,pontosCPU))
+  print('**** End of championship! ****\n')
+  print('Game Score: You {} x {} Computer'.format(pontosJogador,pontosCPU))
   return 0
 
 print()
-print('Bem-vindo ao jogo do NIM! Escolha:')
-escolha = int(input('\n1 - para jogar uma partida isolada\n2 - para jogar um campeonato '))
+print('Welcome to Nim Game! Choose:')
+escolha = int(input('\n1 - Play one match\n2 - Play 3 Round Championship '))
 if (escolha == 1):
   partida()
 elif (escolha == 2):
