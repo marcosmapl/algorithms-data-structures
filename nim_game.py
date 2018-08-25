@@ -1,6 +1,5 @@
 __author__ = "Marcos A. P. de Lima"
-__copyright__ = "Copyright 2011"
-__credits__ = "Rob Knight"
+__copyright__ = "Copyright 2018"
 __license__ = "GNU Public General License"
 __version__ = "3.0"
 __email__ = "marcos.lima@icomp.ufam.edu.br"
