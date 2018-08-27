@@ -3,21 +3,29 @@
 
 char buscaUFAM(char texto[])
 {
-	char tam = 0, i = 0;
+	char i = 0, k = 0;
 	char busca[5] = "UFAM";
 
-	while (texto[tam]) tam++;
-	for (i = 0; i <= tam-4;i++)
+	while (texto[i]) 
 	{
-		//arrumar casos de comparação
-		if ((texto[i] == 'U') && (texto[i+1] == 'F') && (texto[i+2] == 'A') && (texto[i+3] == 'M'))
-		{
-			printf("%d %d\n", texto[i] == 'U', strcmp(busca,&texto[i]));
-			printf("%s\n", &texto[i]);
-			printf("%s\n", busca);
-			printf("%d\n", tam);
-			return 1;
-		}	
+		if (texto[i] == busca[k])
+		{			
+			while ((busca[k]) && (texto[i]))
+			{
+				if (busca[k] == texto[i]) 
+				{
+					k++;
+					i++;
+				}
+				else
+					break;
+			}
+
+			if (busca[k] == 0)
+				return 1;
+			k = 0;	
+		} else
+			i++;
 	}
 	return 0;
 }
@@ -31,7 +39,6 @@ char testBuscaUFAM()
 	{
 		if (buscaUFAM(testFail[i]))
 		{
-			printf("%s\n", testFail[i]);
 			return	0;
 		}
 	}
@@ -39,7 +46,6 @@ char testBuscaUFAM()
 	{
 		if (!buscaUFAM(testSuccess[i]))
 		{
-			printf("%s\n", testSuccess[i]);
 			return	0;
 		}
 	}
