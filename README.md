@@ -23,8 +23,7 @@
 
 ### Selection Sort
 
-<iframe src="https://gfycat.com/ifr/SnappyMasculineAmericancicada" frameborder="0" scrolling="no" allowfullscreen width="640" height="221" ></iframe>
-
+![](img/selection_sort.gif)
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/selection_sort.c)
 
 `Selection Sort` is an __in-place__ comparison sorting algorithm. It has an O(n<sup>2</sup>) time complexity, which makes it __inefficient on large collections__, and generally performs __worse__ than the similar `Insertion Sort`.
