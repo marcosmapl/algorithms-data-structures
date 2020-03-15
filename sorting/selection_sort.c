@@ -29,7 +29,7 @@ int main() {
   
   unsigned int size = sizeof(v) / sizeof(v[0]);
 
-  printf("INSERTION SORT EXAMPLE");
+  printf("SELECTION SORT EXAMPLE");
   printf("SORTING ARRAY: ");
   for (unsigned int i = 0; i < size; i++)
   {
