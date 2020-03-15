@@ -23,7 +23,7 @@
 
 ### Selection Sort
 
-<iframe src='https://gfycat.com/ifr/SnappyMasculineAmericancicada' frameborder='0' scrolling='no' allowfullscreen width='640' height='221'></iframe><p> <a href="https://gfycat.com/snappymasculineamericancicada">via Gfycat</a></p>
+<iframe src="https://gfycat.com/ifr/SnappyMasculineAmericancicada" frameborder="0" scrolling="no" allowfullscreen width="640" height="221" ></iframe>
 
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/selection_sort.c)
 
