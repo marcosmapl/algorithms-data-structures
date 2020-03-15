@@ -1,11 +1,11 @@
 /*
-  Insertion Sort Examples
+  Selection Sort Example
   by Marcos Lima (marcos.lima@icomp.ufam.edu.br)]
   March 15th, 2020
 */
 #include <stdio.h>
 
-void insertionSort(int *v, unsigned int size) {
+void selectionSort(int *v, unsigned int size) {
   int min;
 
   for (unsigned int i = 0; i < size; i++) 
@@ -36,7 +36,7 @@ int main() {
     printf("%d ", v[i]);
   }
 
-  insertionSort(v, size);
+  selectionSort(v, size);
 
   printf("\nSORTED ARRAY: ");
   for (unsigned int i = 0; i < size; i++)
