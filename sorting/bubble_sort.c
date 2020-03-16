@@ -1,5 +1,5 @@
 /*
-  Selection Sort Example
+  Bubble Sort Example
   by Marcos Lima (marcos.lima@icomp.ufam.edu.br)]
   March 15th, 2020
 */
