@@ -16,6 +16,7 @@
   - [Sorting Algorithms](#sorting-algorithms)
     - [Selection Sort](#selection-sort)
     - [Bubble Sort](#bubble-sort)
+    - [Insertion Sort](#insertion-sort)
   - [Contact](#contact)
   - [License](#license)
 
@@ -61,6 +62,26 @@ The time efficiency of `Selection Sort` is __quadratic__, so there are a number 
 > Best-case performance | __O(n) comparisons__ <br /> __O(n) swaps__ (if we keep track of swaps)
 > Average performance  | __O(n<sup>2</sup>) comparisons__ <br /> __O(n<sup>2</sup>) swaps__
 > Worst-case space complexity  | __O(1) auxiliary__
+
+### Insertion Sort
+
+![](img/insertion_sort.gif)
+[View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/insertion_sort.c)
+
+`Insertion Sort` is a simple __in-place__ sorting algorithm that builds the final sorted array __one item at a time__. It is much __less efficient on large lists__ than more advanced algorithms such as `Quicksort`, `Heapsort`, or `Merge Sort`. However, `Insertion Sort` provides several advantages:
+- __Simple implementation__: Jon Bentley shows a three-line C version, and a five-line optimized version.
+- __Efficient for (quite) small data sets__, much like other quadratic sorting algorithms
+- __More efficient in practice__ than most other simple quadratic (i.e., O(n2)) algorithms such as `Selection Sort` or `Bubble Sort`.
+- __Adaptive__, i.e., efficient for data sets that are __already substantially sorted__: the time complexity is O(kn) when each element in the input is no more than __k places away from its sorted position__.
+
+> Property | Description
+> ---  | ---
+> Data Structure  | __Array__
+> Stable  | __Yes__
+> Worst-case performance | __O(n<sup>2</sup>) comparisons__ <br /> __O(n<sup>2</sup>) swaps__
+> Best-case performance | __O(n) comparisons__ <br /> __O(1) swaps__
+> Average performance  | __O(n<sup>2</sup>) comparisons__ <br /> __O(n<sup>2</sup>) swaps__
+> Worst-case space complexity  | __O(n) total__, __O(1) auxiliary__
 
 ## Contact
 
