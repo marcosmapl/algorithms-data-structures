@@ -71,8 +71,8 @@ The time efficiency of `Selection Sort` is __quadratic__, so there are a number 
 `Insertion Sort` is a simple __in-place__ sorting algorithm that builds the final sorted array __one item at a time__. It is much __less efficient on large lists__ than more advanced algorithms such as `Quicksort`, `Heapsort`, or `Merge Sort`. However, `Insertion Sort` provides several advantages:
 - __Simple implementation__: Jon Bentley shows a three-line C version, and a five-line optimized version.
 - __Efficient for (quite) small data sets__, much like other quadratic sorting algorithms
-- __More efficient in practice__ than most other simple quadratic (i.e., O(n2)) algorithms such as `Selection Sort` or `Bubble Sort`.
-- __Adaptive__, i.e., efficient for data sets that are __already substantially sorted__: the time complexity is O(kn) when each element in the input is no more than __k places away from its sorted position__.
+- __More efficient in practice__ than most other simple quadratic (i.e., __O(n<sup>2</sup>)__) algorithms such as `Selection Sort` or `Bubble Sort`.
+- __Adaptive__, i.e., efficient for data sets that are __already substantially sorted__: the time complexity is __O(kn)__ when each element in the input is no more than __k places away from its sorted position__.
 
 > Property | Description
 > ---  | ---
