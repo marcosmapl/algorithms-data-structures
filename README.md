@@ -46,7 +46,7 @@ The time efficiency of `Selection Sort` is __quadratic__, so there are a number 
 
 ### Bubble Sort
 
-![](img/buble_sort.gif)
+![](img/bubble_sort.gif)
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/bubble_sort.c)
 
 `Bubble Sort` (sometimes called `siking sort`), is an __simple__ sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. It has an __O(n<sup>2</sup>)__ time complexity, which makes it __inefficient on large collections__, and generally performs __poorly__ in real world use and is used primarily as an __educational tool__.
