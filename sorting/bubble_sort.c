@@ -13,16 +13,20 @@ void printArray(int *v, unsigned int size) {
 
 void bubbleSort(int *v, unsigned int size) {
     unsigned int i,j, k = size;
-    unsigned char swap;
+    unsigned char swap = 1;
     
-    // k splits the array in two partitions
-    // right side is ordered (i >= k)
-    // left-side is unordered (i < k)
-    while (--k) {
+    // if we didn't swap any element
+    // then the array is ordered, we can stop here
+    while (swap) {
         
         // swap is a improvement
         // it stops the bubble sort if array is ordered
         swap = 0;
+
+        // k splits the array in two partitions
+        // right side is ordered (i >= k)
+        // left-side is unordered (i < k)
+        --k;
         
         // now we pass through the array
         // swapping the greater elementos to the right-side
@@ -38,10 +42,6 @@ void bubbleSort(int *v, unsigned int size) {
         }
         printArray(v, size);
         
-        // if we didn't swap any element
-        // then the array is ordered, we can stop here
-        if (!swap)
-            break;
     }
 }
 
