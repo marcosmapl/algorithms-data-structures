@@ -5,20 +5,32 @@
 */
 #include <stdio.h>
 
+void printArray(int *v, unsigned int size) {
+    printf("\nArray: ");
+  
+    for (unsigned int i = 0; i < size; i++)
+        printf("%d ", v[i]);
+
+    printf("\n");
+}
+
 void selectionSort(int *v, unsigned int size) {
   int min;
 
-  for (unsigned int i = 0; i < size; i++) 
-  {
+  for (unsigned int i = 0; i < size; i++)  {
     min = i;
+    
     for (unsigned int j = i; j < size; j++) 
     {
       if (v[j] < v[min])
         min = j;
     }
+    
     int temp = v[i];
     v[i] = v[min];
     v[min] = temp;
+    
+    printArray(v, size);
   }
 
 }
@@ -31,18 +43,12 @@ int main() {
 
   printf("SELECTION SORT EXAMPLE");
   printf("SORTING ARRAY: ");
-  for (unsigned int i = 0; i < size; i++)
-  {
-    printf("%d ", v[i]);
-  }
+  printArray(v, size);
 
   selectionSort(v, size);
 
   printf("\nSORTED ARRAY: ");
-  for (unsigned int i = 0; i < size; i++)
-  {
-    printf("%d ", v[i]);
-  }
+  printArray(v, size);
   
   return 0;
 }
