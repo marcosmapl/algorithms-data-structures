@@ -40,7 +40,7 @@ The time efficiency of `Selection Sort` is __quadratic__, so there are a number 
 > Data Structure  | __Array__
 > Stable  | __No__
 > Worst-case performance | __O(n<sup>2</sup>) comparisons__ <br /> __O(n) swaps__
-> Best-case performance | __O(n) comparisons (if we keep track of swaps)__ <br /> __O(n) swaps__
+> Best-case performance | __O(n<sup>2</sup>) comparisons__ <br /> __O(n) swaps__
 > Average performance  | __O(n<sup>2</sup>) comparisons__ <br /> __O(n) swaps__
 > Worst-case space complexity  | __O(1)__
 
@@ -58,7 +58,7 @@ The time efficiency of `Selection Sort` is __quadratic__, so there are a number 
 > Data Structure  | __Array__
 > Stable  | __Yes__
 > Worst-case performance | __O(n<sup>2</sup>) comparisons__ <br /> __O(n<sup>2</sup>) swaps__
-> Best-case performance | __O(n<sup>2</sup>) comparisons__ <br /> __O(n<sup>2</sup>) swaps__
+> Best-case performance | __O(n) comparisons__ <br /> __O(n) swaps__ (if we keep track of swaps)
 > Average performance  | __O(n<sup>2</sup>) comparisons__ <br /> __O(n<sup>2</sup>) swaps__
 > Worst-case space complexity  | __O(1) auxiliary__
 
