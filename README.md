@@ -7,38 +7,36 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-> Algorithms and Data Structures Study Repository.
-
 > Keywords: `algorithms`, `data structures`, `sorting`,`graphs`, `strings`, `big o`
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
-  - [Sorting Algorithms](#sorting-algorithms)
-    - [Bubble Sort](#bubble-sort)
-    - [Bucket Sort](#bucket-sort)
-    - [Counting Sort](#counting-sort)
-    - [Heap Sort](#heap-sort)
-    - [Insertion Sort](#insertion-sort)
-    - [Merge Sort](#merge-sort)
-    - [Quick Sort](#quick-sort)
-    - [Radix Sort](#radix-sort)
-    - [Selection Sort](#selection-sort)
-    - [Shell Sort](#shell-sort)
-    - [Tim Sort](#bucket-sort)
-  - [Contact](#contact)
-  - [License](#license)
 
+- [Sorting Algorithms](#sorting-algorithms)
+  - [Bubble Sort](#bubble-sort)
+  - [Bucket Sort](#bucket-sort)
+  - [Counting Sort](#counting-sort)
+  - [Heap Sort](#heap-sort)
+  - [Insertion Sort](#insertion-sort)
+  - [Merge Sort](#merge-sort)
+  - [Quick Sort](#quick-sort)
+  - [Radix Sort](#radix-sort)
+  - [Selection Sort](#selection-sort)
+  - [Shell Sort](#shell-sort)
+  - [Tim Sort](#bucket-sort)
+- [Contact](#contact)
+- [License](#license)
 
 ## Sorting Algorithms
 
 ### Bubble Sort
 
-![](img/bubble_sort.gif)
+![bubble sort gif](img/bubble_sort.gif)
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/bubble_sort.c)
 
 `Bubble Sort` (sometimes called `siking sort`), is an __simple__ sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. It has an __O(n<sup>2</sup>)__ time complexity, which makes it __inefficient on large collections__, and generally performs __poorly__ in real world use and is used primarily as an __educational tool__.
 
-`Bubble Sort` is one of the __simplest sorting algorithms__ to understand and implement, its __O(n<sup>2</sup>)__ complexity means that its efficiency decreases dramatically on lists of more than a small number of elements. Even among simple __O(n<sup>2</sup>)__ sorting algorithms, algorithms like `Insertion Sort` are usually considerably more efficient. 
+`Bubble Sort` is one of the __simplest sorting algorithms__ to understand and implement, its __O(n<sup>2</sup>)__ complexity means that its efficiency decreases dramatically on lists of more than a small number of elements. Even among simple __O(n<sup>2</sup>)__ sorting algorithms, algorithms like `Insertion Sort` are usually considerably more efficient.
 
 > Property | Description
 > ---  | ---
@@ -50,20 +48,24 @@
 > Worst-case space complexity  | __O(1) auxiliary__
 
 ### Bucket Sort
+
 ...
 
 ### Counting Sort
+
 ...
 
 ### Heap Sort
+
 ...
 
 ### Insertion Sort
 
-![](img/insertion_sort.gif)
+![insertion sort gif](img/insertion_sort.gif)
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/insertion_sort.c)
 
 `Insertion Sort` is a simple __in-place__ sorting algorithm that builds the final sorted array __one item at a time__. It is much __less efficient on large lists__ than more advanced algorithms such as `Quicksort`, `Heapsort`, or `Merge Sort`. However, `Insertion Sort` provides several advantages:
+
 - __Simple implementation__: Jon Bentley shows a three-line C version, and a five-line optimized version.
 - __Efficient for (quite) small data sets__, much like other quadratic sorting algorithms
 - __More efficient in practice__ than most other simple quadratic (i.e., __O(n<sup>2</sup>)__) algorithms such as `Selection Sort` or `Bubble Sort`.
@@ -79,17 +81,20 @@
 > Worst-case space complexity  | __O(n) total__, __O(1) auxiliary__
 
 ### Merge Sort
+
 ...
 
 ### Quick Sort
+
 ...
 
 ### Radix Sort
+
 ...
 
 ### Selection Sort
 
-![](img/selection_sort.gif)
+![seleciton sort gif](img/selection_sort.gif)
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/selection_sort.c)
 
 `Selection Sort` is an __in-place__ comparison sorting algorithm. It has an __O(n<sup>2</sup>)__ time complexity, which makes it __inefficient on large collections__, and generally performs __worse__ than the similar `Insertion Sort`.
@@ -110,25 +115,26 @@ The time efficiency of `Selection Sort` is __quadratic__, so there are a number 
 > Worst-case space complexity  | __O(1)__
 
 ### Shell Sort
+
 ...
 
 ### Tim Sort
+
 ...
 
 ## Contact
 
-Marcos Lima  – marcos.lima@icomp.ufam.edu.br
+Marcos Lima [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
+marcos.lima@icomp.ufam.edu.br
 
 [See my project on GitHub](https://github.com/marcosmapl/algorithms-data-structures/)
 
+
 ## License
 
-[![GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-- **[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)**	
-- Copyright 2020 © <a href="https://www.linkedin.com/in/marcosmapl" target="_blank">marcosmapl</a>.
+- **[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)** [![GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+- Copyright 2020 © [marcosmapl](https://github.com/marcosmapl).
 
 <!-- Markdown link & img dfn's -->
 [wiki]: https://github.com/marcosmapl/algorithms-data-structures/wiki
