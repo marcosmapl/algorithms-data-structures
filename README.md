@@ -82,7 +82,26 @@
 
 ### Merge Sort
 
-...
+![merge sort gif](img/merge_sort.gif)
+[View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/merge_sort.c)
+
+`Merge Sort` is an __efficient__, __general-purpose__, __comparison-based__ sorting algorithm. Most implementations produce a __stable sort__, which means that the order of equal elements is the same in the input and output.
+
+`Merge sort` is a __divide and conquer__ algorithm that was invented by John von Neumann in 1945. A detailed description and analysis of bottom-up mergesort appeared in a report by Goldstine and von Neumann as early as 1948.
+
+Conceptually, a merge sort works as follows:
+
+- Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).
+- Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.
+
+> Property | Description
+> ---  | ---
+> Data Structure  | __Array__
+> Stable  | __Yes__
+> Worst-case performance | __O(n _log_ n) typical__
+> Best-case performance | __O(n _log_ n) typical__ <br> __O(n _log_ n) natural variant__
+> Average performance  | __O(n _log_ n)__
+> Worst-case space complexity  | __O(n) total with O(n) auxiliary, <br> O(1) auxiliary with linked lists__
 
 ### Quick Sort
 
