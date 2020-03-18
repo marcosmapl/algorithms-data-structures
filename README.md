@@ -107,12 +107,17 @@ Conceptually, a merge sort works as follows:
 
 ![quick sort gif](img/quick_sort.gif)
 
-- Legends
-  - <span style="color: yellow;">pivot</span>
-  - <span style="color: red;">current element</span>
-  - <span style="color: green;">left partition elements</span>
-  - <span style="color: purple;">right partition elements</span>
-  - <span style="color: orange;">sorted elements</span>
+Legends  
+
+- ![](https://placehold.it/15/ffd700/000000?text=+) `pivot`
+
+- ![](https://placehold.it/15/f03c15/000000000000000?text=+) `current element`
+
+- ![](https://placehold.it/15/008000/000000?text=+) `right partition element`
+
+- ![](https://placehold.it/15/800080/000000?text=+) `left partition element`
+
+- ![](https://placehold.it/15/ffa500/000000?text=+) `sorted element`
 
 [View Code v1: Middle element as Pivot](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/quick_sort.c)
 
