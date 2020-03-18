@@ -32,6 +32,13 @@
 ### Bubble Sort
 
 ![bubble sort gif](img/bubble_sort.gif)
+
+Legends  
+
+- ![](https://placehold.it/15/008000/000000?text=+) `swapping elements`
+
+- ![](https://placehold.it/15/ffa500/000000?text=+) `sorted elements`
+
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/bubble_sort.c)
 
 `Bubble Sort` (sometimes called `siking sort`), is an __simple__ sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. It has an __O(n<sup>2</sup>)__ time complexity, which makes it __inefficient on large collections__, and generally performs __poorly__ in real world use and is used primarily as an __educational tool__.
@@ -62,6 +69,15 @@
 ### Insertion Sort
 
 ![insertion sort gif](img/insertion_sort.gif)
+
+Legends  
+
+- ![](https://placehold.it/15/f03c15/000000000000000?text=+) `element to be inserted`
+
+- ![](https://placehold.it/15/008000/000000?text=+) `partition index`
+
+- ![](https://placehold.it/15/ffa500/000000?text=+) `sorted elements`
+
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/insertion_sort.c)
 
 `Insertion Sort` is a simple __in-place__ sorting algorithm that builds the final sorted array __one item at a time__. It is much __less efficient on large lists__ than more advanced algorithms such as `Quicksort`, `Heapsort`, or `Merge Sort`. However, `Insertion Sort` provides several advantages:
@@ -83,6 +99,11 @@
 ### Merge Sort
 
 ![merge sort gif](img/merge_sort.gif)
+
+Legends  
+
+- ![](https://placehold.it/15/f03c15/000000000000000?text=+) `sorted elements`
+
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/merge_sort.c)
 
 `Merge Sort` is an __efficient__, __general-purpose__, __comparison-based__ sorting algorithm. Most implementations produce a __stable sort__, which means that the order of equal elements is the same in the input and output.
@@ -117,7 +138,7 @@ Legends
 
 - ![](https://placehold.it/15/800080/000000?text=+) `left partition element`
 
-- ![](https://placehold.it/15/ffa500/000000?text=+) `sorted element`
+- ![](https://placehold.it/15/ffa500/000000?text=+) `sorted elements`
 
 [View Code v1: Middle element as Pivot](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/quick_sort.c)
 
@@ -143,6 +164,15 @@ Legends
 ### Selection Sort
 
 ![seleciton sort gif](img/selection_sort.gif)
+
+Legends  
+
+- ![](https://placehold.it/15/f03c15/000000000000000?text=+) `smallest element`
+
+- ![](https://placehold.it/15/008000/000000?text=+) `current element`
+
+- ![](https://placehold.it/15/ffa500/000000?text=+) `sorted elements`
+
 [View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/selection_sort.c)
 
 `Selection Sort` is an __in-place__ comparison sorting algorithm. It has an __O(n<sup>2</sup>)__ time complexity, which makes it __inefficient on large collections__, and generally performs __worse__ than the similar `Insertion Sort`.
