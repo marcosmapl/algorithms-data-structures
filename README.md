@@ -105,7 +105,23 @@ Conceptually, a merge sort works as follows:
 
 ### Quick Sort
 
-...
+![quick sort gif](img/quick_sort.gif)
+[View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/quick_sort.c)
+
+`Quicksort` (sometimes called __partition-exchange sort__) is an efficient sorting algorithm. Developed by British computer scientist Tony Hoare in 1959 and published in 1961, it is still a commonly used algorithm for sorting. When implemented well, it can be about __two or three times faster__ than its main competitors, `Merge Sort` and `Heapsort`.
+
+`Quicksort` is a __divide-and-conquer algorithm__. It works by selecting a __pivot__ element from the array and __partitioning the other elements into two sub-arrays__, according to whether they are __less than__ or __greater than__ the __pivot__. The sub-arrays are then __sorted recursively__. This can be done __in-place__, requiring small additional amounts of memory to perform the sorting.
+
+`Quicksort` is a __comparison sort__, meaning that it can sort items of any type for which a __less-than__ relation (formally, a total order) is defined. Efficient implementations of `Quicksort` are __not a stable sort__, meaning that the relative order of equal sort items is not preserved.
+
+> Property | Description
+> ---  | ---
+> Data Structure  | __Array__
+> Stable  | __No__
+> Worst-case performance | __O(n<sup>2</sup>)__
+> Best-case performance | __O(n log n) simple partition__ <br /> __O(n) three-way partition on equal key__
+> Average performance  | __O(n log n)__
+> Worst-case space complexity  | __O(n) naive__ <br /> __O(log n) auxiliary (Sedgewick 1978)__
 
 ### Radix Sort
 
