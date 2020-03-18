@@ -106,7 +106,15 @@ Conceptually, a merge sort works as follows:
 ### Quick Sort
 
 ![quick sort gif](img/quick_sort.gif)
-[View Code](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/quick_sort.c)
+
+- Legends
+  - <span style="color: yellow;">pivot</span>
+  - <span style="color: red;">current element</span>
+  - <span style="color: green;">left partition elements</span>
+  - <span style="color: purple;">right partition elements</span>
+  - <span style="color: orange;">sorted elements</span>
+
+[View Code v1: Middle element as Pivot](https://github.com/marcosmapl/algorithms-data-structures/blob/master/sorting/quick_sort.c)
 
 `Quicksort` (sometimes called __partition-exchange sort__) is an efficient sorting algorithm. Developed by British computer scientist Tony Hoare in 1959 and published in 1961, it is still a commonly used algorithm for sorting. When implemented well, it can be about __two or three times faster__ than its main competitors, `Merge Sort` and `Heapsort`.
 
